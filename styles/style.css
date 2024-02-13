@@ -10,19 +10,19 @@ body {
 }
 
 .container {
-  background: linear-gradient(0deg, rgba(82,121,156,1) 90%, rgba(255,255,255,0.979150390625) 100%);
   display: flex;
   flex-direction: row;
   padding: 50px;
+  background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,0.8622279884540929) 63%, rgba(82,121,156,1) 63%);
 }
 
 .main-content {
   margin: 20px;
-  padding: 20px;
 }
 .info {
-  background-image: url('/images/frame.png');
-  padding: 20px;
+  background-image: url('../images/frame.png');
+  padding: 40px;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -34,6 +34,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .navClass div {
   display: flex;
@@ -43,9 +44,50 @@ body {
 .navClass div h4{
   font-size: 0.5rem;
 }
+
 .homeLogo {
+  margin-right: 15px;
+  background-color: #52799c;
+  -webkit-box-shadow: -2px 0px 14px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 0px 14px 0px rgba(0,0,0,0.75);
+  box-shadow: -2px 0px 14px 0px rgba(0,0,0,0.75);
+  height: 30px;
+  padding: 4px 10px;
+}
+
+.homeLogo p {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.homeLogo img{
   height: 1.5rem;
 }
 .brandLogo{
   height: 4rem;
+  margin-left: 7px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.links li {
+  list-style: none;
+  padding: 0 10px;
+  color: #52799c;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.links li:last-child {
+  color: lightgray;
+}
+
+.stores {
+  margin-top: 8%;
 }
